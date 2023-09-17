@@ -26,3 +26,9 @@ body,
   height: 100%;
   margin: 0;
 }
+
+@font-face {
+  font-family: "NanumPen";
+  font-weight: 200;
+  src: url("/fonts/NotoSansKR-Bold.ttf") format("truetype");
+}
