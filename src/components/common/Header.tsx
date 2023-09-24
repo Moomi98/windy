@@ -1,35 +1,12 @@
-import styled from "styled-components";
 import { GiLibertyWing } from "react-icons/gi";
-
-const Container = styled.header`
-  width: 100%;
-  height: 4rem;
-  padding: 5px 10px;
-  display: flex;
-  justify-content: space-between;
-`;
-
-const Logo = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 4px;
-`;
-
-const LogoText = styled.strong`
-  font-size: 1.5rem;
-`;
-
-const WingLogo = styled(GiLibertyWing)`
-  color: ${({ theme }) => theme.colors.default};
-`;
 
 export default function Header() {
   return (
-    <Container>
-      <Logo>
-        <WingLogo size={20} />
-        <LogoText>windy</LogoText>
-      </Logo>
-    </Container>
+    <header className="flex w-full h-16 space-x-0 p-4 gap-1">
+      <div className="flex items-center gap-1">
+        <GiLibertyWing size={20} />
+        <strong className="text-2xl">windy</strong>
+      </div>
+    </header>
   );
 }

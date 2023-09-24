@@ -1,6 +1,6 @@
+import Header from "@/src/components/common/Header";
 import "./globals.css";
 import type { Metadata } from "next";
-import StyledComponentsRegistry from "@/lib/StyledComponentRegistry";
 
 export const metadata: Metadata = {
   title: "windy",
@@ -15,7 +15,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <Header />
+        {children}
       </body>
     </html>
   );
